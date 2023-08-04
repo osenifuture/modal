@@ -1,10 +1,12 @@
 
-import Modal from "./Modal";
+// import Modal from "./Modal";
+import Ibedc from "./Ibedc";
 
 function App() {
   return (
     <div >
-     <Modal/>
+     {/* <Modal/> */}
+     <Ibedc/>
     </div>
   );
 }

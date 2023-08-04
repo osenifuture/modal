@@ -1,5 +1,4 @@
-
-import { Fragment, useState } from "react";
+import { useState } from "react";
 
 const Modal = () =>{
     const[isOpen, setisOpen] = useState(false);
@@ -8,7 +7,7 @@ const Modal = () =>{
     //     setisOpen(!isOpen)
     // };
 
-    const handelOpneModal = () => {
+    const handelOpenModal = () => {
         setisOpen(true)
     }
 
@@ -20,12 +19,12 @@ const Modal = () =>{
         <div className="body">
         <div className="con-2">
             <div className="button-con">
-            <button onClick={handelOpneModal}><i className="fa-solid fa-trash"></i></button>
+            <button onClick={handelOpenModal}><i className="fa-solid fa-trash"></i></button>
             </div>
         </div>
         {
             isOpen && (
-                <div className="con-3">
+                <div className="con-3" >
                     <div className="mother-cancel">
                         <button onClick={handelCloseModal}><i className="fa-solid fa-xmark"></i></button>
                         <div className="cancel-con">
